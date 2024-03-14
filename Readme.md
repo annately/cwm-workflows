@@ -1,3 +1,5 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/annately/cwm-workflows)
+
 <p align="center">
   <h3 align="center"> Building and Running Workflows</h3>
   <p align="center">with Crosswork Workflow Manager
@@ -18,7 +20,7 @@
 
 ## Introduction
 
-CWM provides a centralized platform for creating, managing, and executing workflows. 
+Crosswork Workflow Manager (CWM) provides a centralized platform for creating, managing, and executing workflows. 
 In this repository you can find examples of workflows towards NSO and Netbox using pre-built adapters to: 
   - Configure devices with L3VPN service with NSO restconf adapter.
   - Get subnet information for the service from Netbox with generic REST adapter.
@@ -196,7 +198,7 @@ Once wokflow execution job is started, you can go to job tab to see the results.
 
 ### Workflow 2 - Allocate Prefix in Netbox
 
-This workflow task is to allocate subnet in Netbox, that later can be used in L3VPN configuration. The comunication with Netbox is going to take advantage of generic REST adapter. It means we have to specify exact path and payload of the resource that we want too use. In this example it will be POST to Netbox /api/ipam/prefixes/ with prefix and description in request body.
+This workflow task is to allocate subnet in Netbox, that later can be used in L3VPN configuration. The communication with Netbox is going to take advantage of generic REST adapter. It means we have to specify exact path and payload of the resource that we want too use. In this example it will be POST to Netbox /api/ipam/prefixes/ with prefix and description in request body.
 
 Please find workflow complete JSON file [here](workflows/2/allocate_prefixes.json).
 
